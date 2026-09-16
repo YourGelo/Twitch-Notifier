@@ -1,0 +1,8 @@
+name: twitch-notifier
+services:
+  bot:
+    build: .
+    env_file: .env
+    volumes: ["state:/app/data"]
+volumes:
+  state:
